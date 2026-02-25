@@ -11,7 +11,7 @@ while True:
         except:
             print("Das ist keine Zahl! Versuch es nochmal.")
     while True:
-        rechenart = input("Wie willst du rechnen? (+, -, *, /) ")
+        rechenart = input("Wie willst du rechnen? (+, -, *, /, %) ")
         if rechenart == "+" or rechenart == "-" or rechenart == "*" or rechenart == "/" or rechenart == "%":
             break
         else:
@@ -43,6 +43,6 @@ while True:
         break
     
     if antwort == "ja":
-        weiterverwenden = input(f"Ergebnis weiterverwenden? Ja / Nein").lower()
+        weiterverwenden = input(f"Ergebnis weiterverwenden? Ja / Nein: ").lower()
 for nummer, ergebnis in enumerate(ergebnisse, 1):
     print(f"{nummer}. {ergebnis}")
